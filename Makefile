@@ -19,4 +19,7 @@ sqlcini:
 sqlcg:
 	sqlc generate
 
-.PHONY: dockerup dockerdown migc migup migd sqlcini sqlcg
+test:
+	go test -v -cover ./...
+
+.PHONY: dockerup dockerdown migc migup migd sqlcini sqlcg test
