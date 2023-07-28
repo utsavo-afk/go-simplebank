@@ -25,6 +25,3 @@ RETURNING *;
 -- name: DeleteAccount :exec
 DELETE FROM accounts
 WHERE id = $1;
-
--- name: DeleteAllAccounts :exec
-DELETE FROM accounts;

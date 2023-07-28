@@ -1,0 +1,1 @@
+ALTER TABLE transfers ALTER COLUMN created_at DROP NOT NULL;
