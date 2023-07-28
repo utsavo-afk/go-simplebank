@@ -1,0 +1,1 @@
+ALTER TABLE entries ALTER COLUMN account_id DROP NOT NULL;
