@@ -13,4 +13,10 @@ migup:
 migd:
 	migrate -path db/migration  -database "postgresql://$(pguser):$(pgpwd)@localhost:5432/simplebank?sslmode=disable" -verbose down
 
-.PHONY: dockerup dockerdown migc migup migd
+sqlcini:
+	sqlc init
+
+sqlcg:
+	sqlc generate
+
+.PHONY: dockerup dockerdown migc migup migd sqlcini sqlcg
